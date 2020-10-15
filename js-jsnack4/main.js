@@ -2,19 +2,19 @@
 // un numero, se è dispari inseriscilo nell’array.
 
 // creazione di un array vuoto
-
 var array = [];
+console.log(array);
 
-// chiedere all'utente di inserire 6 numeri
-
-var numero1 = parseInt(prompt("Inserisci un numero qualsiasi"));
-var numero2 = parseInt(prompt("Inserisci un numero qualsiasi"));
-var numero3 = parseInt(prompt("Inserisci un numero qualsiasi"));
-var numero4 = parseInt(prompt("Inserisci un numero qualsiasi"));
-var numero5 = parseInt(prompt("Inserisci un numero qualsiasi"));
-
-// se il numer oinserito è dispari inserisci quest'ultimo nell'array
+// se il numer inserito è dispari inserisci quest'ultimo nell'array
 
 for (var i = 0; i < 6; i++) {
-    
+    var numero = parseInt(prompt("Insersci un numero qualsiasi"));
+    var dispari = numero % 2 == 1;
+    if ( dispari == 1 ){
+        // inserisco l'eventuale numer odispari nell'array
+        array.push(numero);
+    }
 }
+
+// stampo il numero dispari nell'array
+console.log(array);
