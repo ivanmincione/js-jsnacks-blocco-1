@@ -9,8 +9,8 @@ console.log(array);
 
 for (var i = 0; i < 6; i++) {
     var numero = parseInt(prompt("Insersci un numero qualsiasi"));
-    var dispari = numero % 2 == 1;
-    if ( dispari == 1 ){
+    var dispari = numero % 2;
+    if ( dispari != 0 ){
         // inserisco l'eventuale numer odispari nell'array
         array.push(numero);
     }

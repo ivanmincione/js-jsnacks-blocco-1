@@ -9,7 +9,8 @@ var number = parseInt(prompt('inserisci un numero'));
 for (var i = 0; i <= number; i++) {
 // variabile di supporto
     var cube = Math.pow(i, 3);
-}
 
-// stampo il risultato del cubo
-console.log(cube);
+    // stampo il risultato del cubo fino al numero inserito dall'utente
+    console.log(cube);
+
+}
